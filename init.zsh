@@ -4,7 +4,7 @@
 # Authors:
 #   Robby Russell <robby@planetargon.com>
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
-#   James Prance <jpts@noreply.github.com>
+#   James Prance <jpts@users.noreply.github.com>
 
 # Return if requirements are not found.
 if [[ "$TERM" == 'dumb' ]]; then
@@ -16,6 +16,7 @@ fpath=("${0:h}/external/src" $fpath)
 
 
 # Don't do compinit here 
+autoload -Uz compdef
 
 #
 # Options
